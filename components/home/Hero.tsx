@@ -122,7 +122,8 @@ export function Hero() {
       />
 
       <div className="relative section-padding w-full z-10 flex justify-start">
-        <div className="max-w-3xl mr-auto w-full ml-12 md:ml-24 lg:ml-32">
+        {/* Pe telefon: conținut mai sus (-mt-8), dungă galbenă mai la stânga (ml-4) */}
+        <div className="max-w-3xl mr-auto w-full -mt-8 md:mt-0 ml-4 md:ml-24 lg:ml-32">
           {/* Linie verticală accent + conținut */}
           <div className="pl-0 md:pl-2 lg:pl-4 border-l-2 border-brand-gold/40 md:border-l-brand-gold/50 md:pl-8 lg:pl-12">
             <motion.span
