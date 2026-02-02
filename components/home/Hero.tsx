@@ -125,7 +125,8 @@ export function Hero() {
         {/* Pe telefon: conținut mai sus (-mt-8), dungă galbenă mai la stânga (ml-4) */}
         <div className="max-w-3xl mr-auto w-full -mt-8 md:mt-0 ml-4 md:ml-24 lg:ml-32">
           {/* Linie verticală accent + conținut */}
-          <div className="pl-0 md:pl-2 lg:pl-4 border-l-2 border-brand-gold/40 md:border-l-brand-gold/50 md:pl-8 lg:pl-12">
+          {/* Pe telefon: mai mult spațiu între linia galbenă și text (linia mai la stânga față de text) */}
+          <div className="pl-6 md:pl-2 lg:pl-4 border-l-2 border-brand-gold/40 md:border-l-brand-gold/50 md:pl-8 lg:pl-12">
             <motion.span
               initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
@@ -148,9 +149,8 @@ export function Hero() {
               >
                 SEVEN INK.
               </h1>
-              <p className="font-body text-xl sm:text-2xl md:text-3xl tracking-[0.25em] text-brand-muted uppercase flex items-center gap-2">
+              <p className="font-body text-xl sm:text-2xl md:text-3xl tracking-[0.25em] text-brand-muted uppercase">
                 tattoo society
-                <span className="text-brand-pink/80 text-2xl md:text-3xl" aria-hidden>♥</span>
               </p>
             </motion.div>
 
